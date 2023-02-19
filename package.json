@@ -1,0 +1,26 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files '.'",
+    "phoenix": "rm -rf ./node_modules ./pakcage-lock.json && source ~/.nvm/nvm.sh && nvm use 18 && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-borja/search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david-borja/search/issues"
+  },
+  "homepage": "https://github.com/david-borja/search#readme",
+  "devDependencies": {
+    "browser-sync": "2.27.5",
+    "standard": "17.0.0"
+  }
+}
