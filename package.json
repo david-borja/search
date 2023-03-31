@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/david-borja/search#readme",
   "devDependencies": {
-    "browser-sync": "2.27.5",
+    "browser-sync": "2.24.1",
     "standard": "17.0.0"
+  }, 
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
