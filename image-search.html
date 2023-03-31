@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./style.css">
-        <title>Image Search</title>
-    </head>
-    <body>
-        <main>
-            <header>
-                <div>
-                    <span>
-                        <a href="./index.html">
-                            Search
-                        </a>
-                    </span>
-                </div>
-            </header>
-            <div class="container">
-                <form action="https://www.google.com/search">
-                    <div class="form-input">
-                        <input type="text" name="q" autocomplete="off">
-                        <input type="hidden" name="tbm" value="isch">
-                    </div>
-                    <div class="form-buttons">
-                        <input type="submit" value="Google Search">
-                        <input type="submit" value="I'm Feeling Lucky">
-                    </div>
-                </form>
-            </div>
-        </main>
-    </body>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Image Search</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span>
+            <a href="./index.html"> Search </a>
+          </span>
+        </div>
+      </header>
+      <div class="container">
+        <div class="image-container">
+          <img src="./googlelogo_light_color_272x92dp.png" alt="Google logo" />
+          <span id="images-span">images</span>
+        </div>
+        <form action="https://www.google.com/search">
+          <div class="form-input">
+            <input type="text" name="q" autocomplete="off" />
+            <input type="hidden" name="tbm" value="isch" />
+          </div>
+          <div class="form-buttons">
+            <input class="button" type="submit" value="Image Search" />
+          </div>
+        </form>
+      </div>
+      <footer></footer>
+    </main>
+  </body>
+  <script defer src="selectInput.js"></script>
 </html>

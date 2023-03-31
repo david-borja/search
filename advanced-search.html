@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./style.css">
-        <title>Advanced Search</title>
-    </head>
-    <body>
-        <main>
-            <header>
-                <div>
-                    <span>
-                        <a href="./index.html">
-                            Search
-                        </a>
-                    </span>
-                </div>
-            </header>
-            <div class="container">
-                <form action="https://www.google.com/search">
-                    <div class="form-input">
-                        <input type="text" name="q">
-                    </div>
-                    <div class="form-buttons">
-                        <input type="submit" value="Google Search">
-                        <input type="submit" value="I'm Feeling Lucky">
-                    </div>
-                </form>
-            </div>
-        </main>
-    </body>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Advanced Search</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span>
+            <a href="./index.html"> Search </a>
+          </span>
+        </div>
+      </header>
+      <div class="container">
+        <form
+          action="https://www.google.com/search"
+          class="advanced-form"
+        >
+          <div>
+            <span>all these words:</span>
+            <input type="text" name="as_q" class="advanced" autocomplete="off" />
+          </div>
+          <div>
+            <span>this exact word or phrase:</span>
+            <input type="text" name="as_epq" class="advanced" autocomplete="off" />
+          </div>
+          <div>
+            <span>any of these words:</span>
+            <input type="text" name="as_oq" class="advanced" autocomplete="off" />
+          </div>
+          <div>
+            <span>none of these words:</span>
+            <input type="text" name="as_eq" class="advanced" autocomplete="off" />
+          </div>
+          <div class="form-buttons">
+            <input
+              class="button advanced-button"
+              type="submit"
+              value="Advanced Search"
+            />
+          </div>
+        </form>
+      </div>
+    <footer></footer>
+    </main>
+  </body>
 </html>
