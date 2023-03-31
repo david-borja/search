@@ -1,7 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #202124;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: roboto-regular, arial, sans-serif;
 }
 
 main {
@@ -17,7 +23,15 @@ header {
   justify-content: end;
 }
 
-a[href="./image-search/image-search.html"] {
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 11vh;
+  width: 100%;
+  background-color: #171717;
+}
+
+a[href='./image-search/image-search.html'] {
   margin-right: 2rem;
 }
 
@@ -38,6 +52,15 @@ header span {
   color: inherit;
 }
 
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+input[type="text"] {
+  outline: none;
+  color: inherit;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -45,28 +68,84 @@ header span {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-bottom: 9rem;
+}
+
+.image-container {
+  position: relative;
 }
 
 .form-input {
-  width: 30rem;
-  margin-bottom: 2rem;
+  width: 37rem;
+  height: 2.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   border: 1px solid #5f6368;
   border-radius: 3rem;
 }
 
 .form-input:hover {
   background-color: #303134;
-  border-color: rgba(223,225,229,0);
+  border-color: rgba(223, 225, 229, 0);
+  cursor: text;
 }
 
 .form-input > input {
-  width: 26rem;
-  height: 2rem;
+  font-size: medium;
+  width: 30rem;
+  height: 2.6rem;
   border: none;
   outline: none;
-  margin: 2px;
   padding-top: 0;
   padding-bottom: 0;
   background-color: inherit;
   color: inherit;
+}
+
+.advanced {
+  background-color: inherit;
+  border: 1px solid #5f6368;
+}
+
+.advanced-form > div {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 0.8rem;
+  min-width: 38rem;
+  height: 1.8rem;
+}
+
+.advanced-form input[type="text"] {
+  min-width: 24rem;
+}
+
+.advanced-form span {
+  padding-top: 0.3rem;
+}
+
+.button {
+  background-color: #303134;
+  border: #3031;
+  color: #e8eaed;
+  border-radius: 4px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  min-width: 54px;
+  height: 36px;
+}
+
+.advanced-button {
+  background-color: blue;
+  margin-left: auto;
+}
+
+#images-span {
+  color: #4487f6;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  top: 4.7rem;
+  left: 13.4rem;
 }
